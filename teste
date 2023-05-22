@@ -1,0 +1,19 @@
+// fazer uma função que ela passe e me retorne um número inteiro como se fosse uma
+// calculadora
+package main
+
+import "fmt"
+
+func soma(i ...int) int { // passo os argumentos e oque a minha função soma irá fazer
+	total := 0
+	for _, v := range i {
+		total += v
+	}
+	return total
+}
+
+// função responsável por fazer a soma dos números
+func main() {
+	x := soma(4, 10)
+	fmt.Println(x)
+}
